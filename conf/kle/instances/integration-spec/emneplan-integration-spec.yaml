@@ -1,0 +1,14 @@
+---
+id: 1340ce39-449f-4b42-9c83-006c1e0417e4
+mimeType: application/vnd.reflective-dk.object+json
+registrations:
+  - validity:
+      - input:
+          class: { id: 0b436737-7dbe-443d-9d73-d9240ce4b17e, name: Integration Spec }
+          # Responsible actor - actor: { id: actor.id }
+          name: Emneplan Integration Spec
+          tenant: { id: aa725d6a-badf-4376-bcc7-63c8423f3604, name: KLE }
+          system: { id: dcf66d43-8892-4f50-8dfb-0fb670d32544, name: KLE }
+          fetcher: { id: 6a68ab66-ccdf-479d-b2b5-9784a3af83da, name: Emneplan Fetcher }
+          stager: { id: 965d6998-166a-4745-91d1-509e85696e74, name: Emneplan Stager }
+...
