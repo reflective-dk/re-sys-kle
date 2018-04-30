@@ -10,5 +10,30 @@ registrations:
           tenant: { id: aa725d6a-badf-4376-bcc7-63c8423f3604, name: KLE }
           system: { id: dcf66d43-8892-4f50-8dfb-0fb670d32544, name: KLE }
           fetcher: { id: 6a68ab66-ccdf-479d-b2b5-9784a3af83da, name: Emneplan Fetcher }
-          stager: { id: 965d6998-166a-4745-91d1-509e85696e74, name: Emneplan Stager }
+          stagers:
+            hovedgruppe:
+              id: 965d6998-166a-4745-91d1-509e85696e74
+              name: Emneplan Hovedgruppe Stager
+            gruppe:
+              id: 023f9821-b39b-4973-8449-6181b22a1ef1
+              name: Emneplan Gruppe Stager
+            emne:
+              id: 3ef8fa43-2d66-4273-9e00-41bc056326e2
+              name: Emneplan Emne Stager
+          incorporation:
+            hovedgruppe:
+              id: 961718c0-59a9-424d-8edb-32d40a4cbf3d
+              name: Object -> KLE Emneplan Hovedgruppe
+            hovedgrupperelation:
+              id: 528bed6f-71ab-4ce2-ae2e-e4aab7ce16be
+              name: Object -> KLE Emneplan Gruppe (Hovedgrupperelation)
+            gruppe:
+              id: 05dac45a-cf25-4068-9148-571341272de9
+              name: Object -> KLE Emneplan Gruppe
+            grupperelation:
+              id: f6a346e2-b106-40b8-a9a8-ccd480b0178e
+              name: Object -> KLE Emneplan Emne (Grupperelation)
+            emne:
+              id: 65649bb9-4640-4e14-801a-d9be0b0a3f16
+              name: Object -> KLE Emneplan Emne
 ...

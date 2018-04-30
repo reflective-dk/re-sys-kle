@@ -1,0 +1,20 @@
+---
+id: 961718c0-59a9-424d-8edb-32d40a4cbf3d
+mimeType: application/vnd.reflective-dk.object+json
+registrations:
+  - validity:
+      - input:
+          # Responsible actor - actor: { id: actor.id }
+          class: { id: efefe41d-805b-478f-8e4d-841085cb7dfa, name: Type Map }
+          name: Object -> KLE Emneplan Hovedgruppe
+          sourceType: { id: c4315fa9-3765-40c0-ba45-ef821c416f83, name: Object }
+          targetType: { id: 94e29bbc-09eb-4b8c-98e0-944bf63a85a9, name: Hovedgruppe }
+          idSeed: 'UUID[0]'
+          condition:
+            type: mustExist
+            attribute: HovedgruppeNr
+          mappings:
+            name:
+              sourceAttribute: name
+              targetAttribute: name
+...

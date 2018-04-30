@@ -1,0 +1,16 @@
+---
+id: 023f9821-b39b-4973-8449-6181b22a1ef1
+mimeType: application/vnd.reflective-dk.object+json
+registrations:
+  - validity:
+      - input:
+          class: { id: 34daf476-b11f-4e56-8e2b-5c76dcff52f2, name: XML Stager }
+          # Responsible actor - actor: { id: actor.id }
+          name: Emneplan Gruppe Stager
+          targetType: { id: c4315fa9-3765-40c0-ba45-ef821c416f83, name: Object }
+          idSeed: 'UUID[0]'
+          nameField: 'GruppeTitel[0]'
+          includeAll: true
+          chunkByElements: { Gruppe: Gruppe }
+          projectElements: { Emne: [ 'UUID[0]', 'EmneTitel[0]' ] }
+...
