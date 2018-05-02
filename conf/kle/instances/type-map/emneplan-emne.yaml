@@ -17,4 +17,41 @@ registrations:
             name:
               sourceAttribute: name
               targetAttribute: name
+            elementnr:
+              sourceAttribute: EmneNr.0
+              targetAttribute: elementnr
+            titel:
+              sourceAttribute: EmneTitel.0
+              targetAttribute: titel
+            vejledning:
+              sourceAttribute: EmneVejledning.0.VejledningTekst
+              targetAttribute: vejledning
+              transform: stringify
+            activeFrom:
+              sourceAttribute: EmneAdministrativInfo.0.OprettetDato
+              targetAttribute: activeFrom
+              transform: normalizeDanishDate
+            oprettetDato:
+              sourceAttribute: EmneAdministrativInfo.0.OprettetDato
+              targetAttribute: oprettetDato
+              transform: normalizeDanishDate
+            rettetDato:
+              sourceAttribute: EmneAdministrativInfo.0.RettetDato
+              targetAttribute: rettetDato
+              transform: normalizeDanishDate
+            # TODO: UdgaaetDato
+            stikordOrden:
+              sourceAttribute: EmneStikord
+              targetAttribute: 'stikordOrden.#'
+              transform:
+                - type: forEach
+                - type: descend
+                  attribute: Orden.0
+            stikordTekst:
+              sourceAttribute: EmneStikord
+              targetAttribute: 'stikordTekst.#'
+              transform:
+                - type: forEach
+                - type: descend
+                  attribute: Tekst.0
 ...
