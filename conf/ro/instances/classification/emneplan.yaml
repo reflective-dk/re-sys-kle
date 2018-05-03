@@ -1,0 +1,14 @@
+# KLE Emneplan
+---
+id: 5b293918-b5e1-45bd-a53c-6f67f2688ff3
+mimeType: application/vnd.reflective-dk.object+json
+registrations:
+  - validity:
+      - input:
+          # Responsible actor - actor: { id: actor.id }
+          class: { id: 4b9eae81-6872-442c-8662-4c23f112df86, name: Classification }
+          name: KLE Emneplan
+          description: KLE Emneplan med Hovedgrupper, Grupper og Emner
+          releaseDate: 2018-02-01T00:00:00.000Z
+          hierarchy: { id: 4296d399-e025-4183-a28b-4b6b0cc4cced, name: KLE Emneplan }
+...
