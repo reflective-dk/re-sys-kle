@@ -15,8 +15,13 @@ registrations:
             attribute: EmneNr
           mappings:
             name:
-              sourceAttribute: name
+              sourceAttribute:
+                - EmneNr.0
+                - EmnegruppeTitel.0
               targetAttribute: name
+              transform:
+                type: join
+                separator: ' '
             elementnr:
               sourceAttribute: EmneNr.0
               targetAttribute: elementnr

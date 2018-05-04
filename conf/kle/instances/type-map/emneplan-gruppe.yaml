@@ -15,8 +15,13 @@ registrations:
             attribute: GruppeNr
           mappings:
             name:
-              sourceAttribute: name
+              sourceAttribute:
+                - GruppeNr.0
+                - GruppeTitel.0
               targetAttribute: name
+              transform:
+                type: join
+                separator: ' '
             elementnr:
               sourceAttribute: GruppeNr.0
               targetAttribute: elementnr
