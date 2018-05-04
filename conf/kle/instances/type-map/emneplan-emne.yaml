@@ -17,7 +17,7 @@ registrations:
             name:
               sourceAttribute:
                 - EmneNr.0
-                - EmnegruppeTitel.0
+                - EmneTitel.0
               targetAttribute: name
               transform:
                 type: join
