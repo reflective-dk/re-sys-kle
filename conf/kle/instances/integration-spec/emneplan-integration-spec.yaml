@@ -9,7 +9,18 @@ registrations:
           name: Emneplan Integration Spec
           tenant: { id: aa725d6a-badf-4376-bcc7-63c8423f3604, name: KLE }
           system: { id: dcf66d43-8892-4f50-8dfb-0fb670d32544, name: KLE }
-          fetcher: { id: 6a68ab66-ccdf-479d-b2b5-9784a3af83da, name: Emneplan Fetcher }
+          fetchers:
+            # Note: The repetition of fetchers below is done intentionally to
+            # match them up with stagers via the keys
+            hovedgruppe:
+              id: 6a68ab66-ccdf-479d-b2b5-9784a3af83da
+              name: Emneplan Fetcher
+            gruppe:
+              id: 6a68ab66-ccdf-479d-b2b5-9784a3af83da
+              name: Emneplan Fetcher
+            emne:
+              id: 6a68ab66-ccdf-479d-b2b5-9784a3af83da
+              name: Emneplan Fetcher
           stagers:
             hovedgruppe:
               id: 965d6998-166a-4745-91d1-509e85696e74
