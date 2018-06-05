@@ -11,7 +11,6 @@ registrations:
             query:
               relatesTo:
                 class: 94e29bbc-09eb-4b8c-98e0-944bf63a85a9
-                name: KLE Hovedgruppe
           pathElements:
             0:
               parentType: { id: 94e29bbc-09eb-4b8c-98e0-944bf63a85a9, name: KLE Hovedgruppe }
