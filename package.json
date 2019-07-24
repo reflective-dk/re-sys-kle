@@ -4,6 +4,7 @@
   "description": "Configuration objects for KLE",
   "main": "index.js",
   "scripts": {
+    "create-object": "create-object",
     "list-integrations": "list-integrations",
     "build": "build-objects",
     "clean": "rm -Rf ./build",
