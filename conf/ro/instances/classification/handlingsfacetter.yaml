@@ -1,13 +1,13 @@
-# KLE Emneplan
+# KLE Handlingsfacetter
 ---
-id: 5b293918-b5e1-45bd-a53c-6f67f2688ff3
+id: 53ea9490-5f11-4498-b718-c1e0b8733349
 mimeType: application/vnd.reflective-dk.object+json
 registrations:
   - validity:
       - input:
           # Responsible actor - actor: { id: actor.id }
           class: { id: 4b9eae81-6872-442c-8662-4c23f112df86, name: Classification }
-          name: KLE Emneplan
-          description: KLE Emneplan med Hovedgrupper, Grupper og Emner
+          name: KLE Handlingsfacetter
+          description: KLE Handlingsfacetter med Handlingsfacetkategorier
           releaseDate: 2019-05-01T00:00:00.000Z
 ...

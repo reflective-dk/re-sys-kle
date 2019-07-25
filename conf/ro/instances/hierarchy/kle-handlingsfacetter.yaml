@@ -1,0 +1,21 @@
+---
+id: 69c333b3-6427-4829-813f-df97414973de
+mimeType: application/vnd.reflective-dk.object+json
+registrations:
+  - validity:
+      - input:
+          class: { id: a07908c1-883f-41e6-9beb-02981f48b067, name: Hierarchy }
+          # Responsible actor - actor: { id: actor.id }
+          name: KLE Handlingsfacetter
+          owner: { id: 53ea9490-5f11-4498-b718-c1e0b8733349, name: KLE Handlingsfacetter }
+          rootQuery:
+            query:
+              relatesTo:
+                class: be5b2541-8b70-4f5a-bcff-e0653ec15409
+          pathElements:
+            0:
+              parentType: { id: be5b2541-8b70-4f5a-bcff-e0653ec15409, name: KLE Handlingsfacetkategori }
+              childType: { id: 343fcd74-b73a-486d-b81f-7eb52d809915, name: KLE Handlingsfacet }
+              relation: kategori
+        from: 1987-01-01T00:00:00.000Z
+...
