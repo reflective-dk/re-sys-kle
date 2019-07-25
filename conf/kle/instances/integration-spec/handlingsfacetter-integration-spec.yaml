@@ -1,0 +1,29 @@
+---
+id: e6d57b0b-54a2-45ab-b846-104f52a35820
+mimeType: application/vnd.reflective-dk.object+json
+registrations:
+  - validity:
+      - input:
+          class: { id: 0b436737-7dbe-443d-9d73-d9240ce4b17e, name: Integration Spec }
+          name: Handlingsfacetter Integration Spec
+          tenant: { id: aa725d6a-badf-4376-bcc7-63c8423f3604, name: KLE }
+          system: { id: dcf66d43-8892-4f50-8dfb-0fb670d32544, name: KLE }
+          stagers:
+            handlingsfacetkategori:
+              id: 8150c589-6dc0-4acb-b57c-a6cb69af18be
+              name: Handlingsfacetter Handlingsfacetkategori Stager
+            handlingsfacet:
+              id: d7f61d75-55f4-4a6e-aa74-20ab64d07338
+              name: Handlingsfacetter Handlingsfacet Stager
+          incorporation:
+            handlingsfacetkategori:
+              id: d17ccb8b-d0c7-49a7-b50d-dd0c568745ec
+              name: Object -> KLE Handlingsfacetter Handlingsfacetkategori
+            handlingsfacetkategoriRelation:
+              id: bd018ddd-626a-416c-8e72-bd08ee5b934f
+              name: Object -> KLE Handlingsfacetter Handlingsfacet (Kategorirelation)
+            handlingsfacet:
+              id: 15c4b109-6731-4bb4-8a71-613b9ec4f778
+              name: Object -> KLE Handlingsfacetter Handlingsfacet
+        from: 2018-01-01T00:00:00.000Z
+...

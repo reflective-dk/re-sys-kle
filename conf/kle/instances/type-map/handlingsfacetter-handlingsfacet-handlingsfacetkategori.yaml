@@ -1,0 +1,27 @@
+---
+id: bd018ddd-626a-416c-8e72-bd08ee5b934f
+mimeType: application/vnd.reflective-dk.object+json
+registrations:
+  - validity:
+      - input:
+          # Responsible actor - actor: { id: actor.id }
+          class: { id: efefe41d-805b-478f-8e4d-841085cb7dfa, name: Type Map }
+          name: Object -> KLE Handlingsfacetter Handlingsfacet (Kategorirelation)
+          sourceType: { id: c4315fa9-3765-40c0-ba45-ef821c416f83, name: Object }
+          targetType: { id: 343fcd74-b73a-486d-b81f-7eb52d809915, name: Handlingsfacet }
+          idSeed: Handlingsfacet
+          condition:
+            type: mustExist
+            attribute: HandlingsfacetKategoriNr
+          transform:
+            - type: forEach
+            - type: descend
+              attribute: UUID
+          mappings:
+            handlingsfacetkategori:
+              sourceAttribute: UUID.0
+              targetAttribute: kategori
+              transform:
+                type: relation
+                target: { id: be5b2541-8b70-4f5a-bcff-e0653ec15409, name: Handlingsfacetkategori }
+...

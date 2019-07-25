@@ -1,0 +1,14 @@
+---
+id: b8091d68-ed23-4c45-a9c7-66d370363db8
+mimeType: application/vnd.reflective-dk.object+json
+registrations:
+  - validity:
+      - input:
+          class: { id: 568d6451-bf4d-408c-9165-87f94f700b0a, name: Import }
+          name: Handlingsfacetter Import 2019-05-01 Handlingsfacetkategori
+          spec: { id: e6d57b0b-54a2-45ab-b846-104f52a35820, name: Handlingsfacetter Integration Spec }
+          fetcherKey: handlingsfacetkategori
+          data: { hash: handlingsfacetter-2019-05-01.xml, name: KLE Handlingsfacetter 2019-05-01 }
+          mimeType: 'application/xml'
+          timestamp: 2019-05-01T00:00:00.000Z
+...

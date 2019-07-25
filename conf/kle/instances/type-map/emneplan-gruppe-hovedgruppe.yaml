@@ -19,7 +19,7 @@ registrations:
               attribute: UUID
           mappings:
             hovedgruppe:
-              sourceAttribute: 'UUID[0]'
+              sourceAttribute: UUID.0
               targetAttribute: hovedgruppe
               transform:
                 type: relation

@@ -1,0 +1,16 @@
+---
+id: 8150c589-6dc0-4acb-b57c-a6cb69af18be
+mimeType: application/vnd.reflective-dk.object+json
+registrations:
+  - validity:
+      - input:
+          class: { id: 34daf476-b11f-4e56-8e2b-5c76dcff52f2, name: XML Stager }
+          # Responsible actor - actor: { id: actor.id }
+          name: Handlingsfacetter Handlingsfacetkategori Stager
+          targetType: { id: c4315fa9-3765-40c0-ba45-ef821c416f83, name: Object }
+          idSeed: 'UUID[0]'
+          nameField: 'HandlingsfacetKategoriTitel[0]'
+          includeAll: true
+          chunkByElements: { HandlingsfacetKategori: HandlingsfacetKategori }
+          projectElements: { Handlingsfacet: [ 'UUID[0]', 'HandlingsfacetTitel[0]' ] }
+...

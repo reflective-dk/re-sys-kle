@@ -1,0 +1,14 @@
+---
+id: 1f114a27-a39b-46c8-be19-c34e4be407da
+mimeType: application/vnd.reflective-dk.object+json
+registrations:
+  - validity:
+      - input:
+          class: { id: 568d6451-bf4d-408c-9165-87f94f700b0a, name: Import }
+          name: Emneplan Import 2017-11-01
+          spec: { id: 1340ce39-449f-4b42-9c83-006c1e0417e4, name: Emneplan Integration Spec }
+          fetcherKey: gruppe
+          data: { hash: emneplan-2017-11-01.xml, name: KLE Emneplan 2017-11-01 }
+          mimeType: 'application/xml'
+          timestamp: 2017-11-01T00:00:00.000Z
+...

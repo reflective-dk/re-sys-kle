@@ -1,0 +1,67 @@
+---
+id: d17ccb8b-d0c7-49a7-b50d-dd0c568745ec
+mimeType: application/vnd.reflective-dk.object+json
+registrations:
+  - validity:
+      - input:
+          # Responsible actor - actor: { id: actor.id }
+          class: { id: efefe41d-805b-478f-8e4d-841085cb7dfa, name: Type Map }
+          name: Object -> KLE Handlingsfacetter Handlingsfacetkategori
+          sourceType: { id: c4315fa9-3765-40c0-ba45-ef821c416f83, name: Object }
+          targetType: { id: be5b2541-8b70-4f5a-bcff-e0653ec15409, name: Handlingsfacetkategori }
+          idSeed: UUID.0
+          condition:
+            type: mustExist
+            attribute: HandlingsfacetKategoriNr
+          mappings:
+            name:
+              sourceAttribute:
+                - HandlingsfacetKategoriNr.0
+                - HandlingsfacetKategoriTitel.0
+              targetAttribute: name
+              transform:
+                type: join
+                separator: ' '
+            uuid:
+              sourceAttribute: UUID.0
+              targetAttribute: foreignIds.uuid
+            elementnr:
+              sourceAttribute: HandlingsfacetKategoriNr.0
+              targetAttribute: elementnr
+            titel:
+              sourceAttribute: HandlingsfacetKategoriTitel.0
+              targetAttribute: titel
+            vejledning:
+              sourceAttribute: HandlingsfacetKategoriVejledning.0.VejledningTekst
+              targetAttribute: vejledning
+              transform: stringify
+            activeFrom:
+              sourceAttribute: HandlingsfacetKategoriAdministrativInfo.0.OprettetDato.0
+              targetAttribute: activeFrom
+              transform: normalizeDanishDate
+            oprettetDato:
+              sourceAttribute: HandlingsfacetKategoriAdministrativInfo.0.OprettetDato.0
+              targetAttribute: oprettetDato
+              transform: normalizeDanishDate
+            rettetDato:
+              sourceAttribute: HandlingsfacetKategoriAdministrativInfo.0.RettetDato.0
+              targetAttribute: rettetDato
+              transform: normalizeDanishDate
+            activeTo:
+              # The KLE import process also uses an existence check, in case any
+              # elements are removed from the source data
+              sourceAttribute: HandlingsfacetKategoriAdministrativInfo.0.Historisk.0.UdgaaetDato.0
+              targetAttribute: activeTo
+              transform: normalizeDanishDate
+            udgaaetDato:
+              sourceAttribute: HandlingsfacetKategoriAdministrativInfo.0.Historisk.0.UdgaaetDato.0
+              targetAttribute: udgaaetDato
+              transform: normalizeDanishDate
+            delplanFilter:
+              sourceAttribute: HandlingsfacetKategoriFilter
+              targetAttribute: 'delplanFilter.#'
+              transform:
+                - type: forEach
+                - type: descend
+                  attribute: FilterTitel.0
+...

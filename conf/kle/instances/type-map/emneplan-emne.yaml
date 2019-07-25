@@ -9,7 +9,7 @@ registrations:
           name: Object -> KLE Emneplan Emne
           sourceType: { id: c4315fa9-3765-40c0-ba45-ef821c416f83, name: Object }
           targetType: { id: aa6b2598-47c2-4a80-8bf0-bfa83e6afae8, name: Emne }
-          idSeed: 'UUID[0]'
+          idSeed: UUID.0
           condition:
             type: mustExist
             attribute: EmneNr
@@ -22,6 +22,9 @@ registrations:
               transform:
                 type: join
                 separator: ' '
+            uuid:
+              sourceAttribute: UUID.0
+              targetAttribute: foreignIds.uuid
             elementnr:
               sourceAttribute: EmneNr.0
               targetAttribute: elementnr
@@ -32,19 +35,34 @@ registrations:
               sourceAttribute: EmneVejledning.0.VejledningTekst
               targetAttribute: vejledning
               transform: stringify
+            bevaringJaevnfoerArkivloven:
+              sourceAttribute: BevaringJaevnfoerArkivloven.0
+              targetAttribute: bevaringJaevnfoerArkivloven
+            sletningJaevnfoerPersondataloven:
+              sourceAttribute: SletningJaevnfoerPersondataloven.0
+              targetAttribute: sletningJaevnfoerPersondataloven
             activeFrom:
-              sourceAttribute: EmneAdministrativInfo.0.OprettetDato
+              sourceAttribute: EmneAdministrativInfo.0.OprettetDato.0
               targetAttribute: activeFrom
               transform: normalizeDanishDate
             oprettetDato:
-              sourceAttribute: EmneAdministrativInfo.0.OprettetDato
+              sourceAttribute: EmneAdministrativInfo.0.OprettetDato.0
               targetAttribute: oprettetDato
               transform: normalizeDanishDate
             rettetDato:
-              sourceAttribute: EmneAdministrativInfo.0.RettetDato
+              sourceAttribute: EmneAdministrativInfo.0.RettetDato.0
               targetAttribute: rettetDato
               transform: normalizeDanishDate
-            # TODO: UdgaaetDato
+            activeTo:
+              # The KLE import process also uses an existence check, in case any
+              # elements are removed from the source data
+              sourceAttribute: EmneAdministrativInfo.0.Historisk.0.UdgaaetDato.0
+              targetAttribute: activeTo
+              transform: normalizeDanishDate
+            udgaaetDato:
+              sourceAttribute: EmneAdministrativInfo.0.Historisk.0.UdgaaetDato.0
+              targetAttribute: udgaaetDato
+              transform: normalizeDanishDate
             stikordOrden:
               sourceAttribute: EmneStikord
               targetAttribute: 'stikordOrden.#'
@@ -59,4 +77,35 @@ registrations:
                 - type: forEach
                 - type: descend
                   attribute: Tekst.0
+            delplanFilter:
+              sourceAttribute: EmneFilter
+              targetAttribute: 'delplanFilter.#'
+              transform:
+                - type: forEach
+                - type: descend
+                  attribute: FilterTitel.0
+            handlingsfacetStikordOrden:
+              sourceAttribute: EmneOgHandlingsfacetStikord
+              targetAttribute: 'handlingsfacetStikordOrden.#'
+              transform:
+                - type: forEach
+                - type: descend
+                  attribute: Orden.0
+            handlingsfacetStikordTekst:
+              sourceAttribute: EmneOgHandlingsfacetStikord
+              targetAttribute: 'handlingsfacetStikordTekst.#'
+              transform:
+                - type: forEach
+                - type: descend
+                  attribute: Tekst.0
+            handlingsfacet:
+              sourceAttribute: EmneOgHandlingsfacetStikord
+              targetAttribute: 'handlingsfacet.#'
+              transform:
+                - type: forEach
+                - type: descend
+                  attribute: HandlingsfacetNr.0
+                - type: lookup
+                  lookupAttribute: elementnr
+                  query: { relatesTo: { class: 343fcd74-b73a-486d-b81f-7eb52d809915 } }
 ...

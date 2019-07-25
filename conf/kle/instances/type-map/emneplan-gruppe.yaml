@@ -9,7 +9,7 @@ registrations:
           name: Object -> KLE Emneplan Gruppe
           sourceType: { id: c4315fa9-3765-40c0-ba45-ef821c416f83, name: Object }
           targetType: { id: b75866ec-eea1-451b-8ca3-88aebc98e020, name: Gruppe }
-          idSeed: 'UUID[0]'
+          idSeed: UUID.0
           condition:
             type: mustExist
             attribute: GruppeNr
@@ -22,6 +22,9 @@ registrations:
               transform:
                 type: join
                 separator: ' '
+            uuid:
+              sourceAttribute: UUID.0
+              targetAttribute: foreignIds.uuid
             elementnr:
               sourceAttribute: GruppeNr.0
               targetAttribute: elementnr
@@ -33,18 +36,27 @@ registrations:
               targetAttribute: vejledning
               transform: stringify
             activeFrom:
-              sourceAttribute: GruppeAdministrativInfo.0.OprettetDato
+              sourceAttribute: GruppeAdministrativInfo.0.OprettetDato.0
               targetAttribute: activeFrom
               transform: normalizeDanishDate
             oprettetDato:
-              sourceAttribute: GruppeAdministrativInfo.0.OprettetDato
+              sourceAttribute: GruppeAdministrativInfo.0.OprettetDato.0
               targetAttribute: oprettetDato
               transform: normalizeDanishDate
             rettetDato:
-              sourceAttribute: GruppeAdministrativInfo.0.RettetDato
+              sourceAttribute: GruppeAdministrativInfo.0.RettetDato.0
               targetAttribute: rettetDato
               transform: normalizeDanishDate
-            # TODO: UdgaaetDato
+            activeTo:
+              # The KLE import process also uses an existence check, in case any
+              # elements are removed from the source data
+              sourceAttribute: GruppeAdministrativInfo.0.Historisk.0.UdgaaetDato.0
+              targetAttribute: activeTo
+              transform: normalizeDanishDate
+            udgaaetDato:
+              sourceAttribute: GruppeAdministrativInfo.0.Historisk.0.UdgaaetDato.0
+              targetAttribute: udgaaetDato
+              transform: normalizeDanishDate
             stikordOrden:
               sourceAttribute: GruppeStikord
               targetAttribute: 'stikordOrden.#'
@@ -59,4 +71,11 @@ registrations:
                 - type: forEach
                 - type: descend
                   attribute: Tekst.0
+            delplanFilter:
+              sourceAttribute: EmneFilter
+              targetAttribute: 'delplanFilter.#'
+              transform:
+                - type: forEach
+                - type: descend
+                  attribute: FilterTitel.0
 ...
