@@ -34,14 +34,14 @@ registrations:
               type: simple
               dataType: string
             # EmneOgHandlingsfacetStikord
-            emneOghandlingsfacetStikordOrden:
-              type: simple
+            handlingsfacetStikordOrden:
+              type: map
               dataType: string
-            emneOghandlingsfacetStikordTekst:
-              type: simple
+            handlingsfacetStikordTekst:
+              type: map
               dataType: string
             handlingsfacet:
-              type: simple
+              type: map
               dataType:
                 type: relation
                 target: { id: 343fcd74-b73a-486d-b81f-7eb52d809915, name: KLE Handlingsfacet }

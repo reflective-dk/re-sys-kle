@@ -42,7 +42,7 @@ registrations:
                 type: relation
                 target: { id: 5ea08fe4-35c6-434f-a15a-a84eb766ca71, name: KLE Element }
             # Filter
-            filterTitel:
+            delplanFilter:
               type: map
               dataType: string
             # Stikord
