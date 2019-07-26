@@ -10,4 +10,5 @@ registrations:
           name: KLE Emneplan
           description: KLE Emneplan med Hovedgrupper, Grupper og Emner
           releaseDate: 2019-05-01T00:00:00.000Z
+        from: 1987-01-01T00:00:00.000Z
 ...
