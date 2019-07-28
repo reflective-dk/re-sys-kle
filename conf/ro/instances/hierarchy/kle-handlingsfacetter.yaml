@@ -1,11 +1,9 @@
 ---
 id: 69c333b3-6427-4829-813f-df97414973de
-mimeType: application/vnd.reflective-dk.object+json
 registrations:
   - validity:
       - input:
           class: { id: a07908c1-883f-41e6-9beb-02981f48b067, name: Hierarchy }
-          # Responsible actor - actor: { id: actor.id }
           name: KLE Handlingsfacetter
           owner: { id: 53ea9490-5f11-4498-b718-c1e0b8733349, name: KLE Handlingsfacetter }
           rootQuery:

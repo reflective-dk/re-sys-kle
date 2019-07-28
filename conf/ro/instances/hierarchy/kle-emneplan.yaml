@@ -1,11 +1,9 @@
 ---
 id: 4296d399-e025-4183-a28b-4b6b0cc4cced
-mimeType: application/vnd.reflective-dk.object+json
 registrations:
   - validity:
       - input:
           class: { id: a07908c1-883f-41e6-9beb-02981f48b067, name: Hierarchy }
-          # Responsible actor - actor: { id: actor.id }
           name: KLE Emneplan
           owner: { id: 5b293918-b5e1-45bd-a53c-6f67f2688ff3, name: KLE Emneplan }
           rootQuery:

@@ -1,10 +1,8 @@
 ---
 id: d17ccb8b-d0c7-49a7-b50d-dd0c568745ec
-mimeType: application/vnd.reflective-dk.object+json
 registrations:
   - validity:
       - input:
-          # Responsible actor - actor: { id: actor.id }
           class: { id: efefe41d-805b-478f-8e4d-841085cb7dfa, name: Type Map }
           name: Object -> KLE Handlingsfacetter Handlingsfacetkategori
           sourceType: { id: c4315fa9-3765-40c0-ba45-ef821c416f83, name: Object }

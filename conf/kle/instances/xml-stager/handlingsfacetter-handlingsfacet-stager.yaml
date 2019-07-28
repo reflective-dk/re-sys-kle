@@ -1,11 +1,9 @@
 ---
 id: d7f61d75-55f4-4a6e-aa74-20ab64d07338
-mimeType: application/vnd.reflective-dk.object+json
 registrations:
   - validity:
       - input:
           class: { id: 34daf476-b11f-4e56-8e2b-5c76dcff52f2, name: XML Stager }
-          # Responsible actor - actor: { id: actor.id }
           name: Handlingsfacetter Handlingsfacet Stager
           targetType: { id: c4315fa9-3765-40c0-ba45-ef821c416f83, name: Object }
           idSeed: UUID.0
