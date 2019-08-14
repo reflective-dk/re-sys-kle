@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="3.1.0">
   <bpmn:collaboration id="Collaboration_11d6hwn">
-    <bpmn:participant id="Participant_1cmscbv" name="Anyone" processRef="Ra832e2d8-73d3-46df-9614-395d2a979240" />
+    <bpmn:participant id="Participant_1cmscbv" name="Anyone" processRef="R198f55bb-55b7-4c37-898e-33e77521f777" />
   </bpmn:collaboration>
-  <bpmn:process id="Ra832e2d8-73d3-46df-9614-395d2a979240" name="kle-import" isExecutable="true" camunda:versionTag="1.0" camunda:taskPriority="1">
+  <bpmn:process id="R198f55bb-55b7-4c37-898e-33e77521f777" name="kle-import" isExecutable="true" camunda:versionTag="1.0" camunda:taskPriority="1">
     <bpmn:startEvent id="kle-emneplan-import-initiated" name="KLE Emneplan import initiated">
       <bpmn:extensionElements>
         <camunda:executionListener expression="${execution.setVariable(&#39;specification&#39;, &#39;1340ce39-449f-4b42-9c83-006c1e0417e4&#39;)}" event="start" />
