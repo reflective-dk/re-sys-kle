@@ -1,0 +1,16 @@
+---
+id: 62ffe0ce-a6a2-4c1f-86b3-02704f25902d
+registrations:
+  - validity:
+      - input:
+          class:
+            id: 8e80de8b-4c8c-42ca-8ddd-cec816a955fa
+            name: Process Configuration
+          process:
+            id: bf254e34-3afd-480a-9d11-1837246180f6
+            name: KLE Handlingsfacetter Import
+          specification:
+            id: e6d57b0b-54a2-45ab-b846-104f52a35820
+            name: KLE Handlingsfacetter Integration Spec
+        from: 2018-01-01T00:00:00.000Z
+...

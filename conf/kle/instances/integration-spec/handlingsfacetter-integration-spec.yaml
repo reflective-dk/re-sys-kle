@@ -4,9 +4,26 @@ registrations:
   - validity:
       - input:
           class: { id: 0b436737-7dbe-443d-9d73-d9240ce4b17e, name: Integration Spec }
-          name: Handlingsfacetter Integration Spec
-          tenant: { id: aa725d6a-badf-4376-bcc7-63c8423f3604, name: KLE }
-          system: { id: dcf66d43-8892-4f50-8dfb-0fb670d32544, name: KLE }
+          name: KLE Handlingsfacetter Integration Spec
+          # Note: we use the system as a dummy tenant, because we want to have
+          # the same KLE object ids across all customers
+          tenant: { id: 08639d71-d597-4785-9484-609756c7be3d, name: KLE Handlingsfacetter }
+          system: { id: 08639d71-d597-4785-9484-609756c7be3d, name: KLE Handlingsfacetter }
+          sources:
+            kleHandlingsfacetter:
+              id: 22468fae-5f88-4aba-943c-baa55d5d103f
+          process:
+            id: bf254e34-3afd-480a-9d11-1837246180f6
+            name: KLE Handlingsfacetter Import
+          chain: kle
+          existence:
+            incorporate:
+              kleHandlingsfacet:
+                id: 343fcd74-b73a-486d-b81f-7eb52d809915
+                name: KLE Handlingsfacet
+              kleHandlingsfacetkategori:
+                id: be5b2541-8b70-4f5a-bcff-e0653ec15409
+                name: KLE Handlingsfacetkategori
           stagers:
             handlingsfacetkategori:
               id: 8150c589-6dc0-4acb-b57c-a6cb69af18be

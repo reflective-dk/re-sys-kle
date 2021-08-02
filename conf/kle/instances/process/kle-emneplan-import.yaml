@@ -8,7 +8,7 @@ registrations:
           userStartable: false
           chain: kle
           category: Integration
-          system: { id: dcf66d43-8892-4f50-8dfb-0fb670d32544, name: KLE }
+          system: { id: dcf66d43-8892-4f50-8dfb-0fb670d32544, name: KLE Emneplan }
           bpmn: { hash: kle-emneplan-import.bpmn }
         from: 2018-01-01T00:00:00.000Z
 ...

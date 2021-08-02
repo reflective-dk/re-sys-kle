@@ -8,7 +8,7 @@ registrations:
           userStartable: false
           chain: kle
           category: Integration
-          system: { id: dcf66d43-8892-4f50-8dfb-0fb670d32544, name: KLE }
+          system: { id: 08639d71-d597-4785-9484-609756c7be3d, name: KLE Handlingsfacetter }
           bpmn: { hash: kle-handlingsfacetter-import.bpmn }
         from: 2018-01-01T00:00:00.000Z
 ...

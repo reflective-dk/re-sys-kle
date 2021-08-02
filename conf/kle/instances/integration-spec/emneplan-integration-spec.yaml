@@ -4,9 +4,29 @@ registrations:
   - validity:
       - input:
           class: { id: 0b436737-7dbe-443d-9d73-d9240ce4b17e, name: Integration Spec }
-          name: Emneplan Integration Spec
-          tenant: { id: aa725d6a-badf-4376-bcc7-63c8423f3604, name: KLE }
-          system: { id: dcf66d43-8892-4f50-8dfb-0fb670d32544, name: KLE }
+          name: KLE Emneplan Integration Spec
+          # Note: we use the system as a dummy tenant, because we want to have
+          # the same KLE object ids across all customers
+          tenant: { id: dcf66d43-8892-4f50-8dfb-0fb670d32544, name: KLE Emneplan }
+          system: { id: dcf66d43-8892-4f50-8dfb-0fb670d32544, name: KLE Emneplan }
+          sources:
+            kleEmneplan:
+              id: 0034ae66-edf1-4145-a8d3-9d80bb1cc1bf
+          process:
+            id: 198f55bb-55b7-4c37-898e-33e77521f777
+            name: KLE Emneplan Import
+          chain: kle
+          existence:
+            incorporate:
+              kleEmne:
+                id: aa6b2598-47c2-4a80-8bf0-bfa83e6afae8
+                name: KLE Emne
+              kleGruppe:
+                id: b75866ec-eea1-451b-8ca3-88aebc98e020
+                name: KLE Gruppe
+              kleHovedgruppe:
+                id: 94e29bbc-09eb-4b8c-98e0-944bf63a85a9
+                name: KLE Hovedgruppe
           stagers:
             hovedgruppe:
               id: 965d6998-166a-4745-91d1-509e85696e74

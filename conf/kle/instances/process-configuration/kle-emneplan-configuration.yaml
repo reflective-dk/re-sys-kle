@@ -1,0 +1,16 @@
+---
+id: a3d012b7-d33a-4bd9-926e-b6a8b46895de
+registrations:
+  - validity:
+      - input:
+          class:
+            id: 8e80de8b-4c8c-42ca-8ddd-cec816a955fa
+            name: Process Configuration
+          process:
+            id: 198f55bb-55b7-4c37-898e-33e77521f777
+            name: KLE Emneplan Import
+          specification:
+            id: 1340ce39-449f-4b42-9c83-006c1e0417e4
+            name: KLE Emneplan Integration Spec
+        from: 2018-01-01T00:00:00.000Z
+...
