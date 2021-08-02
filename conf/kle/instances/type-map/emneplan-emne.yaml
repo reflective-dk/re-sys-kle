@@ -42,25 +42,25 @@ registrations:
             activeFrom:
               sourceAttribute: EmneAdministrativInfo.0.OprettetDato.0
               targetAttribute: activeFrom
-              transform: normalizeDanishDate
+              transform: capDate
             oprettetDato:
               sourceAttribute: EmneAdministrativInfo.0.OprettetDato.0
               targetAttribute: oprettetDato
-              transform: normalizeDanishDate
+              transform: capDate
             rettetDato:
               sourceAttribute: EmneAdministrativInfo.0.RettetDato.0
               targetAttribute: rettetDato
-              transform: normalizeDanishDate
+              transform: capDate
             activeTo:
               # The KLE import process also uses an existence check, in case any
               # elements are removed from the source data
               sourceAttribute: EmneAdministrativInfo.0.Historisk.0.UdgaaetDato.0
               targetAttribute: activeTo
-              transform: normalizeDanishDate
+              transform: capDate
             udgaaetDato:
               sourceAttribute: EmneAdministrativInfo.0.Historisk.0.UdgaaetDato.0
               targetAttribute: udgaaetDato
-              transform: normalizeDanishDate
+              transform: capDate
             stikordOrden:
               sourceAttribute: EmneStikord
               targetAttribute: 'stikordOrden.#'
