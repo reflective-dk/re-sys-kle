@@ -1,0 +1,9 @@
+---
+id: 08639d71-d597-4785-9484-609756c7be3d
+registrations:
+  - validity:
+      - input:
+          class: { id: e8bc40c5-e542-4bab-b6fc-64b2339ffa15, name: System }
+          name: KLE Handlingsfacetter
+        from: 2018-01-01T00:00:00.000Z
+...
