@@ -3,7 +3,7 @@
   <bpmn:collaboration id="Collaboration_11d6hwn">
     <bpmn:participant id="Participant_1cmscbv" name="Systemejer for KLE Handlingsfacetter" processRef="Rbf254e34-3afd-480a-9d11-1837246180f6" />
   </bpmn:collaboration>
-  <bpmn:process id="Rbf254e34-3afd-480a-9d11-1837246180f6" name="ReConnect Opus Import" isExecutable="true" camunda:versionTag="1.0" camunda:taskPriority="1">
+  <bpmn:process id="Rbf254e34-3afd-480a-9d11-1837246180f6" name="KLE Handlingsfacetter Import" isExecutable="true" camunda:versionTag="1.0" camunda:taskPriority="1">
     <bpmn:startEvent id="reconnectOpusImportInitiated" name="Import af KLE Handlingsfacetter påbegyndt">
       <bpmn:outgoing>SequenceFlow_127wjkd</bpmn:outgoing>
     </bpmn:startEvent>
