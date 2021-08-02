@@ -1,0 +1,13 @@
+---
+id: b9d1cd95-c08e-438e-a747-00234de19623
+registrations:
+  - validity:
+      - input:
+          class: { id: 568d6451-bf4d-408c-9165-87f94f700b0a, name: Import }
+          name: Handlingsfacetter Import 2021-05-01 (Kategori)
+          spec: { id: e6d57b0b-54a2-45ab-b846-104f52a35820, name: Handlingsfacetter Integration Spec }
+          fetcherKey: handlingsfacetkategori
+          data: { hash: handlingsfacetter-2021-05-01.xml, name: KLE Handlingsfacetter 2021-05-01 }
+          mimeType: 'application/xml'
+          timestamp: 2021-05-01T00:00:00.000Z
+...
