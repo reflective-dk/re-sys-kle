@@ -1,0 +1,18 @@
+---
+id: 364ae336-9dbe-43c3-95af-aec23c54d358
+registrations:
+  - validity:
+      - input:
+          class: { id: 1938d89b-a935-412d-a23c-02709fe63c0c, name: System Access }
+          name: Ansvarsområde
+          shortName: Ansvarsområde
+          title: Ansvarsområde
+          system:
+            id: dcf66d43-8892-4f50-8dfb-0fb670d32544
+            name: KLE Emneplan
+          auxiliaryType: multiselect
+          auxiliaryHierarchy:
+            id: 4296d399-e025-4183-a28b-4b6b0cc4cced
+            name: KLE Emneplan
+        from: 2018-01-01T00:00:00.000Z
+...

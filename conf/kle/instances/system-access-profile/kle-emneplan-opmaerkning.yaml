@@ -1,0 +1,23 @@
+---
+id: 624bb3a3-77a4-4a7c-8bab-c5981ad34a17
+registrations:
+  - validity:
+      - input:
+          class: { id: a882353e-8b1b-4649-a759-ccf95b9c1fe3, name: System Access Profile }
+          name: KLE Emneplan-opmærkning
+          shortName: KLE Emneplan-opmærkning
+          title: KLE Emneplan-opmærkning
+          system:
+            id: dcf66d43-8892-4f50-8dfb-0fb670d32544
+            name: KLE Emneplan
+          published: true
+          synligBrugergodkendelse: true
+          accesses:
+            94718d5c-3c57-4982-9d40-982d3e271911:
+              id: 94718d5c-3c57-4982-9d40-982d3e271911
+              name: Interesseområde
+            364ae336-9dbe-43c3-95af-aec23c54d358:
+              id: 364ae336-9dbe-43c3-95af-aec23c54d358
+              name: Ansvarsområde
+        from: 2018-01-01T00:00:00.000Z
+...
