@@ -12,6 +12,7 @@ registrations:
             name: KLE Emneplan
           published: true
           synligBrugergodkendelse: true
+          category: tagging
           accesses:
             94718d5c-3c57-4982-9d40-982d3e271911:
               id: 94718d5c-3c57-4982-9d40-982d3e271911

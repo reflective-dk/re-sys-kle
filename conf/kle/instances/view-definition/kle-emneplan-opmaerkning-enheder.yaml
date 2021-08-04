@@ -1,0 +1,31 @@
+---
+id: 3075937e-4023-4b38-9fa7-e980eca7369d
+registrations:
+  - validity:
+      - input:
+          class: { id: 36a0eb70-1ef1-45dd-a0bc-73c58685e012, name: View Definition }
+          name: KLE Emneplan-opmærkning af enheder
+          config:
+            ids: [ tagging-admin-id ]
+            bundleRefs:
+              entityTree: entityTree
+              tagTree: tagTree
+              allocations: allocations
+              profile: profile
+            extensionRefs:
+              allocationValues: allocationValues
+          view:
+            id: tagging-admin-id
+            view: ro-tagging-admin
+            profile: profile
+            acceptedTagClasses: { kle-emne-class: true }
+            allocations: allocations
+            allocationValues: allocationValues
+            entityTree: entityTree
+            entityTreeLabel: Administrativ Organisation
+            entityTypeLabel: Organisationsenhed
+            tagTree: tagTree
+            tagTreeLabel: KLE Emneplan
+            tagTypeLabel: KLE Emne
+        from: 2005-01-01T00:00:00.000Z
+...
