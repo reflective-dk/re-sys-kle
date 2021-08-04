@@ -13,7 +13,8 @@
     "postdeploy": "npm run validate",
     "upload": "upload-data",
     "validate": "validate-objects",
-    "test": "mocha --recursive"
+    "test": "mocha --recursive",
+    "install": "unpack-sym"
   },
   "repository": {
     "type": "git",
@@ -24,12 +25,16 @@
     "configuration",
     "kle"
   ],
+  "symlinks": {
+    "data/ro-tagging-admin-ctrl.js": "../../re-conf-ro/data/ro-tagging-admin-ctrl.js"
+  },
   "author": "Reflective Code <code@reflective.dk>",
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "re-models": "git+ssh://git@github.com/reflective-dk/re-models.git",
-    "re-conf-util": "git+ssh://git@github.com/reflective-dk/re-conf-util.git"
+    "@rweda/npm-pkg-sym": "^1.1.8",
+    "re-conf-util": "git+ssh://git@github.com/reflective-dk/re-conf-util.git",
+    "re-models": "git+ssh://git@github.com/reflective-dk/re-models.git"
   },
   "devDependencies": {
     "re-core-cli": "git+ssh://git@github.com:reflective-dk/re-core-cli.git"
