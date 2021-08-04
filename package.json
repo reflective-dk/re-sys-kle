@@ -29,7 +29,6 @@
   "private": true,
   "dependencies": {
     "re-models": "git+ssh://git@github.com/reflective-dk/re-models.git",
-    "re-conf-ro": "git+ssh://git@github.com/reflective-dk/re-conf-ro.git",
     "re-conf-util": "git+ssh://git@github.com/reflective-dk/re-conf-util.git"
   },
   "devDependencies": {
