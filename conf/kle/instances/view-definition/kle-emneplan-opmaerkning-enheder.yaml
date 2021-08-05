@@ -18,7 +18,9 @@ registrations:
             id: tagging-admin-id
             view: ro-tagging-admin
             profile: profile
-            acceptedTagClasses: { kle-emne-class: true }
+            acceptedTagClasses:
+              # Only KLE Emne is accepted
+              aa6b2598-47c2-4a80-8bf0-bfa83e6afae8: true
             allocations: allocations
             allocationValues: allocationValues
             entityTree: entityTree
