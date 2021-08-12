@@ -1,13 +1,13 @@
 ---
-id: 681793e1-7ff6-4889-9b31-372fd288eea4
+id: 4d5c7988-3d1e-4f2c-8e49-eba628b6ac1d
 registrations:
   - validity:
       - input:
           class: { id: efec2048-b4f3-4ffd-a7ba-b6698d412bbc, name: Process }
-          name: KLE-opmærkning af enheder
+          name: KLE Handlingsfacetter-opmærkning af ansættelser
           userStartable: true
           chain: kle-tagging
           category: Administration
-          bpmn: { hash: kle-opmaerkning-af-enheder.bpmn }
+          bpmn: { hash: kle-handlingsfacetter-opmaerkning-af-ansaettelser.bpmn }
         from: 2018-01-01T00:00:00.000Z
 ...

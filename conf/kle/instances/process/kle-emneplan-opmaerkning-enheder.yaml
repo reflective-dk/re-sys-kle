@@ -1,0 +1,13 @@
+---
+id: 681793e1-7ff6-4889-9b31-372fd288eea4
+registrations:
+  - validity:
+      - input:
+          class: { id: efec2048-b4f3-4ffd-a7ba-b6698d412bbc, name: Process }
+          name: KLE-opmærkning af enheder
+          userStartable: true
+          chain: kle-tagging
+          category: Administration
+          bpmn: { hash: kle-emneplan-opmaerkning-af-enheder.bpmn }
+        from: 2018-01-01T00:00:00.000Z
+...

@@ -1,0 +1,21 @@
+---
+id: cab2bcc9-cf46-42da-b966-c10db38d81c4
+registrations:
+  - validity:
+      - input:
+          class: { id: a882353e-8b1b-4649-a759-ccf95b9c1fe3, name: System Access Profile }
+          name: KLE Handlingsfacetter
+          shortName: KLE Handlingsfacetter
+          title: KLE Handlingsfacetter
+          system:
+            id: 08639d71-d597-4785-9484-609756c7be3d
+            name: KLE Handlingsfacetter
+          published: true
+          synligBrugergodkendelse: true
+          category: tagging
+          accesses:
+            11ca0a91-ed9a-4d1b-8f0f-575ca81a8865:
+              id: 11ca0a91-ed9a-4d1b-8f0f-575ca81a8865
+              name: Handling
+        from: 2018-01-01T00:00:00.000Z
+...
