@@ -29,6 +29,7 @@ registrations:
             entityTree: entityTree
             entityTreeLabel: Ansættelser
             entityTypeLabel: Ansættelse
+            entityTemplate: snapshot.employee.snapshot.name
             tagTree: tagTree
             tagTreeLabel: KLE Handlingsfacetter
             tagTypeLabel: KLE Handlingsfacet

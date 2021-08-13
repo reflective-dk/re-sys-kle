@@ -26,8 +26,14 @@ registrations:
                   class: a07908c1-883f-41e6-9beb-02981f48b067
                 matches:
                   category: employment-admin
+              expand:
+                path: snapshot.employee
+                class: 66d33a37-f73c-4723-8dca-5feb9cf420e4
+                projection:
+                  name: true
               projection:
                 name: true
+                employee: true
                 activeFrom: true
                 activeTo: true
             tagHierarchy:
