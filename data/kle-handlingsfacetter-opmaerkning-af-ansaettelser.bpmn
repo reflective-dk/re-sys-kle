@@ -3,7 +3,7 @@
   <bpmn:collaboration id="b0fdb513">
     <bpmn:participant id="f63c1fbd" name="Systemejer for KLE Handlingsfacetter" processRef="R4d5c7988-3d1e-4f2c-8e49-eba628b6ac1d" />
   </bpmn:collaboration>
-  <bpmn:process id="R4d5c7988-3d1e-4f2c-8e49-eba628b6ac1d" name="KLE-opmærkning af enheder" isExecutable="true" camunda:versionTag="1.0" camunda:taskPriority="1">
+  <bpmn:process id="R4d5c7988-3d1e-4f2c-8e49-eba628b6ac1d" name="KLE-opmærkning af ansættelser" isExecutable="true" camunda:versionTag="1.0" camunda:taskPriority="1">
     <bpmn:laneSet />
     <bpmn:endEvent id="end" name="Fuldført">
       <bpmn:incoming>SequenceFlow_0yrv99v</bpmn:incoming>
