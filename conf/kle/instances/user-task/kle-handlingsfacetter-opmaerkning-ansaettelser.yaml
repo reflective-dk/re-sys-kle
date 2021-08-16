@@ -31,6 +31,7 @@ registrations:
                 class: 66d33a37-f73c-4723-8dca-5feb9cf420e4
                 projection:
                   name: true
+              filterActive: true
               projection:
                 name: true
                 employee: true
@@ -41,6 +42,7 @@ registrations:
               hierarchy:
                 id: 69c333b3-6427-4829-813f-df97414973de
                 name: KLE Handlingsfacetter
+              filterActive: false
               projection:
                 name: true
                 activeFrom: true

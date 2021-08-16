@@ -26,6 +26,7 @@ registrations:
                   class: a07908c1-883f-41e6-9beb-02981f48b067
                 matches:
                   category: administrative
+              filterActive: false
               projection:
                 name: true
                 activeFrom: true
@@ -35,6 +36,7 @@ registrations:
               hierarchy:
                 id: 4296d399-e025-4183-a28b-4b6b0cc4cced
                 name: KLE Emneplan
+              filterActive: false
               projection:
                 name: true
                 activeFrom: true
