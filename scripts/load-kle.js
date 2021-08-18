@@ -1,8 +1,9 @@
-const api = new (require('reflective-api'))({ log_level: 'error' });
+const path = require('path');
 const Promise = require('bluebird');
 const util = require('util');
 const uuid = require('uuid');
-const kleConf = require('./index').model;
+const api = new (require('reflective-api'))({ log_level: 'error' });
+const kleConf = require(path.join(__dirname, '../index')).model;
 
 var domain = process.argv[2];
 if (!domain) {
