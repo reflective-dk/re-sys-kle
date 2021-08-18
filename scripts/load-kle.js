@@ -1,3 +1,7 @@
+#!/usr/bin/env node
+
+"use strict";
+
 const path = require('path');
 const Promise = require('bluebird');
 const util = require('util');
