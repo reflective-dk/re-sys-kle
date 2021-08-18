@@ -13,6 +13,8 @@ registrations:
           published: true
           synligBrugergodkendelse: true
           category: tagging
+          acceptedEntityClasses:
+             06c495eb-fcef-4c09-996f-63fd2dfea427: {id: 06c495eb-fcef-4c09-996f-63fd2dfea427, name: employment}
           accesses:
             11ca0a91-ed9a-4d1b-8f0f-575ca81a8865:
               id: 11ca0a91-ed9a-4d1b-8f0f-575ca81a8865
