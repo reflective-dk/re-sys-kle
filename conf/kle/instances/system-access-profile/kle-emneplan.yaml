@@ -14,7 +14,13 @@ registrations:
           synligBrugergodkendelse: true
           category: tagging
           acceptedEntityClasses:
-             5cad9972-6560-4136-a9d5-40c2d109be9b: {id: 5cad9972-6560-4136-a9d5-40c2d109be9b, name: unit}
+            5cad9972-6560-4136-a9d5-40c2d109be9b:
+              id: 5cad9972-6560-4136-a9d5-40c2d109be9b
+              name: Unit
+          acceptedTagClasses:
+            aa6b2598-47c2-4a80-8bf0-bfa83e6afae8:
+              id: aa6b2598-47c2-4a80-8bf0-bfa83e6afae8
+              name: KLE Emne
           accesses:
             94718d5c-3c57-4982-9d40-982d3e271911:
               id: 94718d5c-3c57-4982-9d40-982d3e271911

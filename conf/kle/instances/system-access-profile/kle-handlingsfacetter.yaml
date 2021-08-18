@@ -14,7 +14,13 @@ registrations:
           synligBrugergodkendelse: true
           category: tagging
           acceptedEntityClasses:
-             06c495eb-fcef-4c09-996f-63fd2dfea427: {id: 06c495eb-fcef-4c09-996f-63fd2dfea427, name: employment}
+            06c495eb-fcef-4c09-996f-63fd2dfea427:
+              id: 06c495eb-fcef-4c09-996f-63fd2dfea427
+              name: Employment
+          acceptedTagClasses:
+            343fcd74-b73a-486d-b81f-7eb52d809915:
+              id: 343fcd74-b73a-486d-b81f-7eb52d809915
+              name: KLE Handlingsfacet
           accesses:
             11ca0a91-ed9a-4d1b-8f0f-575ca81a8865:
               id: 11ca0a91-ed9a-4d1b-8f0f-575ca81a8865
