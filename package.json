@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Configuration objects for KLE",
   "main": "index.js",
+  "bin": {
+    "load-kle": "./scripts/load-kle.js",
+  },
   "scripts": {
     "create-object": "create-object",
     "list-integrations": "list-integrations",
