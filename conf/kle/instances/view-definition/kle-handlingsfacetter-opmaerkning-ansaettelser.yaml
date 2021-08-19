@@ -18,12 +18,6 @@ registrations:
             id: tagging-admin-id
             view: ro-tagging-admin
             profile: profile
-            acceptedEntityClasses:
-              # Only Employment is accepted
-              06c495eb-fcef-4c09-996f-63fd2dfea427: true
-            acceptedTagClasses:
-              # Only KLE Handlingsfacet is accepted
-              343fcd74-b73a-486d-b81f-7eb52d809915: true
             allocations: allocations
             allocationValues: allocationValues
             entityTree: entityTree
