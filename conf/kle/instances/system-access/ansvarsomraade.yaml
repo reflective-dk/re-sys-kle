@@ -7,7 +7,7 @@ registrations:
           name: Ansvarsområde
           shortName: Ansvarsområde
           title: Ansvarsområde
-          category: Tagging
+          category: Opmarkering
           system:
             id: dcf66d43-8892-4f50-8dfb-0fb670d32544
             name: KLE Emneplan

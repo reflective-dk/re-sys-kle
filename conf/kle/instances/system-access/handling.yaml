@@ -7,7 +7,7 @@ registrations:
           name: Handling
           shortName: Handling
           title: Handling
-          category: Tagging
+          category: Opmarkering
           system:
             id: 08639d71-d597-4785-9484-609756c7be3d
             name: KLE Handlingsfacetter
