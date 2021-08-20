@@ -8,8 +8,8 @@ Follow these steps to get the code and check that the basic functionality is
 working.
 
 ```
-git clone git@github.com:reflective-dk/re-conf-kle.git
-cd re-conf-kle
+git clone git@github.com:reflective-dk/re-sys-kle.git
+cd re-sys-kle
 npm install
 ```
 
