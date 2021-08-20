@@ -7,7 +7,7 @@ registrations:
           name: Interesseområde
           shortName: Interesseområde
           title: Interesseområde
-          category: Opmarkering
+          category: Opmærkning
           system:
             id: dcf66d43-8892-4f50-8dfb-0fb670d32544
             name: KLE Emneplan
