@@ -6,6 +6,9 @@ registrations:
           class: { id: a07908c1-883f-41e6-9beb-02981f48b067, name: Hierarchy }
           name: KLE Emneplan
           owner: { id: 5b293918-b5e1-45bd-a53c-6f67f2688ff3, name: KLE Emneplan }
+          system:
+            id: dcf66d43-8892-4f50-8dfb-0fb670d32544
+            name: KLE Emneplan
           rootQuery:
             query:
               relatesTo:

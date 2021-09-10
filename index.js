@@ -8,4 +8,4 @@ var dataLoc = path.join(rootLoc, 'data');
 
 var confUtil = require('re-conf-util');
 
-module.exports = confUtil.prepareConf(confLoc, dataLoc, 'conf-kle', [ models ]);
+module.exports = confUtil.prepareConf(confLoc, dataLoc, 'sys-kle', [ models ]);

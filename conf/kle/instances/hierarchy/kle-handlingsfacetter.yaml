@@ -6,6 +6,9 @@ registrations:
           class: { id: a07908c1-883f-41e6-9beb-02981f48b067, name: Hierarchy }
           name: KLE Handlingsfacetter
           owner: { id: 53ea9490-5f11-4498-b718-c1e0b8733349, name: KLE Handlingsfacetter }
+          system:
+            id: 08639d71-d597-4785-9484-609756c7be3d
+            name: KLE Handlingsfacetter
           rootQuery:
             query:
               relatesTo:
