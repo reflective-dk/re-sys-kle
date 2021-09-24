@@ -6,7 +6,6 @@ registrations:
           class: { id: a882353e-8b1b-4649-a759-ccf95b9c1fe3, name: System Access Profile }
           name: KLE Emneplan
           shortName: KLE Emneplan
-          title: KLE Emneplan
           system:
             id: dcf66d43-8892-4f50-8dfb-0fb670d32544
             name: KLE Emneplan

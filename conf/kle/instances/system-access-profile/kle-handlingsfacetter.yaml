@@ -6,7 +6,6 @@ registrations:
           class: { id: a882353e-8b1b-4649-a759-ccf95b9c1fe3, name: System Access Profile }
           name: KLE Handlingsfacetter
           shortName: KLE Handlingsfacetter
-          title: KLE Handlingsfacetter
           system:
             id: 08639d71-d597-4785-9484-609756c7be3d
             name: KLE Handlingsfacetter
