@@ -4,12 +4,19 @@
     <bpmn:participant id="f63c1fbd" name="Systemejer for KLE Emneplan" processRef="R681793e1-7ff6-4889-9b31-372fd288eea4" />
   </bpmn:collaboration>
   <bpmn:process id="R681793e1-7ff6-4889-9b31-372fd288eea4" name="KLE-opmærkning af enheder" isExecutable="true" camunda:versionTag="1.0" camunda:taskPriority="1">
-    <bpmn:extensionElements>
-      <camunda:properties>
-        <camunda:property name="responsitility" value="cc09e988-017e-429f-8031-8ba12333370b" />
-      </camunda:properties>
-    </bpmn:extensionElements>
-    <bpmn:laneSet />
+    <bpmn:laneSet>
+      <bpmn:lane id="Lane_0db7dbm">
+        <bpmn:extensionElements>
+          <camunda:properties>
+            <camunda:property name="responsibility" value="cc09e988-017e-429f-8031-8ba12333370b" />
+          </camunda:properties>
+        </bpmn:extensionElements>
+        <bpmn:flowNodeRef>end</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>merge</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>admintask</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>start</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
     <bpmn:endEvent id="end" name="Fuldført">
       <bpmn:incoming>SequenceFlow_0yrv99v</bpmn:incoming>
     </bpmn:endEvent>
@@ -31,7 +38,10 @@
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="b0fdb513">
       <bpmndi:BPMNShape id="Participant_1cmscbv_di" bpmnElement="f63c1fbd" isHorizontal="true">
-        <dc:Bounds x="161" y="95" width="579" height="317" />
+        <dc:Bounds x="161" y="95" width="759" height="335" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_0db7dbm_di" bpmnElement="Lane_0db7dbm" isHorizontal="true">
+        <dc:Bounds x="191" y="95" width="729" height="335" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="SequenceFlow_14zjcbt_di" bpmnElement="SequenceFlow_14zjcbt">
         <di:waypoint x="275" y="255" />
