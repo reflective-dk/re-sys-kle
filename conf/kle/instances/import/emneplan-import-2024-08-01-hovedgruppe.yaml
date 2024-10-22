@@ -1,0 +1,13 @@
+---
+id: dc03edba-bbb2-4bac-9b49-c2b3220a9fc3
+registrations:
+  - validity:
+      - input:
+          class: { id: 568d6451-bf4d-408c-9165-87f94f700b0a, name: Import }
+          name: Emneplan Import 2024-08-01 (Hovedgruppe)
+          spec: { id: 1340ce39-449f-4b42-9c83-006c1e0417e4, name: Emneplan Integration Spec }
+          fetcherKey: hovedgruppe
+          data: { hash: emneplan-2024-08-01.xml, name: KLE Emneplan 2024-08-01 }
+          mimeType: 'application/xml'
+          timestamp: 2024-08-01T00:00:00.000Z
+...
